@@ -104,19 +104,14 @@ Amazon の OLP の一つを答えてもらってください。
 
 <details>
 <summary>プロンプトの例</summary>
-NG 例：AmazonのOLPを一つ教えて
 
-OK 例：Amazon の OLP(our Leadership Principles)を一つ教えて
-<br>
+- NG 例：Amazon の OLP を一つ教えて
+- OK 例：Amazon の OLP(our Leadership Principles)を一つ教えて
 
 > [!TIP]
 > NG 例のプロンプトだと OLP が理解できないようで、出鱈目を答えたり、Amazon の内部情報については教えられないと回答されたりします。OLP が何かを補足することで正しく回答できるようになります。
 
 </details>
-<br>
-
-> [!NOTE]
-> 時間が余ったら、OLP 名を言わず所望の OLP を答えさせられるかチャレンジしてみましょう。
 
 ### Task 3: メールの添削
 
