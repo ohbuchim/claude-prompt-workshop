@@ -94,7 +94,7 @@ Claude に、桃太郎がお供にした三匹の動物が何か答えてもら�
 桃太郎がお供にしたのはどんな動物ですか
 
 > [!NOTE]
-> 思ってたのと違う動物が回答されたのではないでしょうか？上記プロンプトだと、タヌキが出てくることが多かったです。
+> 思ってたのと違う動物が回答されたのではないでしょうか？上記プロンプトだと、タヌキが出てくることが多かったです。これはハルシネーションという、LLM が事実と異なる情報を出力する例です。
 
 </details>
 
@@ -107,7 +107,7 @@ Amazon の OLP の一つを答えてもらってください。
 NG 例：AmazonのOLPを一つ教えて
 OK 例：AmazonのOLP(our Leadership Principles)を一つ教えて
 
-> [!NOTE]
+> [!TIP]
 > NG 例のプロンプトだと OLP が理解できないようで、出鱈目を答えたり、Amazon の内部情報については教えられないと回答されたりします。OLP が何かを補足することで正しく回答できるようになります。
 
 </details>
@@ -146,7 +146,7 @@ OK 例：AmazonのOLP(our Leadership Principles)を一つ教えて
 山田
 ```
 
-> [!NOTE]
+> [!TIP]
 > 意外とシンプルに命令するだけで期待する結果が得られました。
 
 </details>
@@ -177,10 +177,10 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 We started in a garage, but we’re not there anymore. We are big, we impact the world, and we are far from perfect. We must be humble and thoughtful about even the secondary effects of our actions. Our local communities, planet, and future generations need us to be better every day. We must begin each day with a determination to make better, do better, and be better for our customers, our employees, our partners, and the world at large. And we must end every day knowing we can do even more tomorrow. Leaders create more than they consume and always leave things better than how they found them.
 ```
 
+</details>
+
 > [!NOTE]
 > 日本語以外がわかる方は別の言語への翻訳も試してみてください。最近訳すのが難しかったテキストがあればそれも試してみてください。
-
-</details>
 
 ### Task 5: 感情分析
 
@@ -198,7 +198,7 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 この商品はとても使いにくいです。持ち上げようとしたら肩が外れてしまいました。
 ```
 
-> [!NOTE]
+> [!TIP]
 > 意外とシンプルに命令するだけで期待する結果が得られました。
 
 </details>
@@ -245,7 +245,7 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 この本はとても面白いです。友達にも薦めたいです
 ```
 
-> [!NOTE]
+> [!TIP]
 > 例を与えることでうまく分類してくれるようになります。dosukoi の例が 2 つだとたまに真ん中のテキストが positive と判定されることがありました。
 
 </details>
@@ -306,7 +306,7 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 この本はとても面白いです。友達にも薦めたいです
 ```
 
-> [!NOTE]
+> [!TIP]
 > 出力形式を指定する際に、「テキスト、分類」のセットが 1 つだけだとうまくマークダウン形式にならなかったので、2 回繰り返してみたらうまくいきました。
 
 </details>
@@ -339,8 +339,6 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 契約書を厳格に作成していると、各条項の精査にあたって社内のコンプライアンス意識が高まります。コンプライアンス意識の高まりは契約だけでなく、その他の業務にも良い影響をもたらします。
 特に近年は「コンプライアンスを重視するクリーンな企業であること」のアピールが重要であり、コンプライアンス意識が低いと消費者や取引先からの信用が失墜するため、十分注意しなければなりません。
 ```
-
-aaa
 
 <details>
 <summary>プロンプトの例</summary>
@@ -378,7 +376,7 @@ n. 理由
 
 ```
 
-> [!NOTE]
+> [!TIP]
 > 出力形式を指定する際に、「1. 理由」のように書くと、3 つの理由のうち一部しか回答してくれないことがあったため n という変数を使ってみました。
 
 </details>
@@ -425,7 +423,7 @@ n. 理由
 　私は実に先生をこの雑沓の間に見付け出したのである。その時海岸には掛茶屋が二軒あった。私はふとした機会からその一軒の方に行き慣れていた。長谷辺に大きな別荘を構えている人と違って、各自に専有の着換場を拵えていないここいらの避暑客には、ぜひともこうした共同着換所といった風なものが必要なのであった。彼らはここで茶を飲み、ここで休息する外に、ここで海水着を洗濯させたり、ここで鹹はゆい身体を清めたり、ここへ帽子や傘を預けたりするのである。海水着を持たない私にも持物を盗まれる恐れはあったので、私は海へはいるたびにその茶屋へ一切を脱ぎ棄てる事にしていた。
 ```
 
-> [!NOTE]
+> [!TIP]
 > 出力形式の表現に手こずりました。抽出したテキストなどで置き換えて欲しい部分を [人名 or 場所 or 体の部位のいずれか] のように [ ] で囲むといい感じになりました。
 
 </details>
