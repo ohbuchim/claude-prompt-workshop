@@ -91,6 +91,7 @@ Claude に、桃太郎がお供にした三匹の動物が何か答えてもら�
 
 <details>
 <summary>プロンプトの例</summary>
+
 桃太郎がお供にしたのはどんな動物ですか
 
 > [!NOTE]
@@ -108,7 +109,7 @@ Amazon の OLP の一つを答えてもらってください。
 - NG 例：Amazon の OLP を一つ教えて
 - OK 例：Amazon の OLP(our Leadership Principles)を一つ教えて
 
-> [!TIP]
+> **Tip**  
 > NG 例のプロンプトだと OLP が理解できないようで、出鱈目を答えたり、Amazon の内部情報については教えられないと回答されたりします。OLP が何かを補足することで正しく回答できるようになります。
 
 </details>
