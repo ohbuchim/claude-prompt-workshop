@@ -6,9 +6,13 @@
 
 [Anthropic Claude](https://claude.ai/)、[ChatGPT](https://chat.openai.com)、[Bing Copilot](https://www.bing.com/) は個人ですぐに利用できる生成 AI なので、それらを試してみるのも学びが多いと思います。
 
-## アプリのアカウントを作成
+## Workshop の事前準備
 
-割り当てられた URL をブラウザのアドレスバーにペーストしてアプリを開いてください。
+本 Workshop では、[Bedrock Claude Chat](https://github.com/aws-samples/bedrock-claude-chat) をデプロイしたアプリを使用します。
+
+### アプリのアカウントを作成
+
+デプロイしたアプリの URL をブラウザのアドレスバーにペーストしてアプリを開いてください。
 
 すると、以下の画面が表示されるので、Create Account タブをクリックしてアカウントを作成してください。
 
@@ -25,7 +29,7 @@
 
 ![ログイン](img/verify-email.png)
 
-## 動作確認
+### 動作確認
 
 画面左上のメニュの一番上にある「New Chat」をクリックして、テキストボックスに「こんにちは」などと入れてみましょう。Claude が答えてくれたら OK です。
 
