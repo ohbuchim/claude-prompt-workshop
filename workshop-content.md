@@ -108,6 +108,7 @@ NG 例：AmazonのOLPを一つ教えて
 OK 例：AmazonのOLP(our Leadership Principles)を一つ教えて
 
 > [!TIP]
+>
 > NG 例のプロンプトだと OLP が理解できないようで、出鱈目を答えたり、Amazon の内部情報については教えられないと回答されたりします。OLP が何かを補足することで正しく回答できるようになります。
 
 </details>
