@@ -105,10 +105,12 @@ Claude に、桃太郎がお供にした三匹の動物が何か答えてもら�
 <details>
 <summary>プロンプトの例</summary>
 
+```text
 桃太郎がお供にしたのはどんな動物ですか
+```
 
 > [!NOTE]
-> 思ってたのと違う動物が回答されたのではないでしょうか？上記プロンプトだと、タヌキが出てくることが多かったです。これはハルシネーションという、LLM が事実と異なる情報を出力する例です。
+> 正しく回答されたでしょうか？ 上記プロンプトを Claude instant に入れたら、タヌキが出てくることが多かったです。これはハルシネーションという、LLM が事実と異なる情報を出力する例です。
 
 </details>
 
@@ -119,8 +121,10 @@ Amazon の OLP の一つを答えてもらってください。
 <details>
 <summary>プロンプトの例</summary>
 
+```text
 - NG 例：Amazon の OLP を一つ教えて
 - OK 例：Amazon の OLP(our Leadership Principles)を一つ教えて
+```
 
 > Tip  
 > NG 例のプロンプトだと OLP が理解できないようで、出鱈目を答えたり、Amazon の内部情報については教えられないと回答されたりします。OLP が何かを補足することで正しく回答できるようになります。
@@ -299,7 +303,7 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 <summary>プロンプトの例</summary>
 
 ```text
-以下の3つのテキストの内容をpositive、negative、dosukoiのいずれかに分類してください。
+以下の3つのテキストの内容をpositive、negative、dosukoiのいずれかに分類してください。dosukoiが当てはまる場合はそれを優先させてください。
 分類例は以下の通りです。
 <example>
 この商品はとても良い: positive
@@ -315,7 +319,7 @@ We started in a garage, but we’re not there anymore. We are big, we impact the
 ```
 
 > Tip  
-> 例を与えることでうまく分類してくれるようになります。dosukoi の例が 2 つだとたまに真ん中のテキストが positive と判定されることがありました。
+> 例を与えることでうまく分類してくれるようになります。dosukoi の例が 2 つだとたまに真ん中のテキストが positive と判定されることがありました。複数の分類が該当する場合にどちらを優先させるかなどを追加で記載するのも有効かもしれません。
 
 </details>
 
@@ -687,6 +691,7 @@ n. 理由
 </text>
 
 <format>
+
 ## 校正後の文章
 ここに校正後の文章を記載する。
 ## コメント
@@ -862,7 +867,7 @@ n. 理由
 ```
 
 > Tip  
-> Claude instant, Claude v2.1、Claude 3 Haiku ではうまくいきませんでしたが、Claude 3 Sonnet と ChatGPT 4 ではこのプロンプトでうまくいきました。
+> Claude instant, Claude v2.1、Claude 3 Haiku（Haiku は惜しい感じ）ではうまくいきませんでしたが、Claude 3 Sonnet と ChatGPT 4 ではこのプロンプトでいい感じでした。
 
 </details>
 
